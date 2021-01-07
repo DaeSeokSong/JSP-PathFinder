@@ -1,0 +1,164 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+* {
+	font-family: 'Nanum Gothic';
+}
+h5 {
+	font-family: 'Jeju Gothic';
+	font-size: 15px;
+}
+h4 {
+	font-family: 'Jeju Gothic';
+}
+h3 {
+	font-family: 'Hanna';
+}
+h2 {
+	font-family: 'Hanna';
+}
+h1 {
+	font-family: 'Hanna';
+}
+/* 테이블 관련 디자인 처리 */
+thead th {
+	background-color: #006DCC;
+	color: white;
+	text-align: center;
+}
+tr td:first-child,
+tr td:first-child {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+tr td:last-child,
+tr td:last-child {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+/* 모달 팝업창 관련 디자인 처리 */
+.vertical-alignment-helper {
+	display: table;
+	height: 100%;
+	width: 100%;
+	pointer-events: none;
+}
+.vertical-align-center {
+	display: table-cell;
+	vertical-align: middle;
+	pointer-events: none;
+}
+.modal-content {
+	width: inherit;
+	height: inherit;
+	margin: 0 auto;
+	pointer-events: all;
+}
+/* 전체 링크 관련 영역 */
+* {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	color: #bbbbbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* 네이게이션 영역 */
+.navbar-default { /*배경 색상*/
+	background-color: #006DCC;
+	border-color: #006DCC;
+	border-bottom-color: #dddddd;
+	border-bottom-width: 3px;
+	border-radius: 0px;
+}
+.navbar-default .navbar-brand { /*제목 색상*/
+	color: #ffffff;
+	padding-top: 25px;
+	font-family: 'Hanna';
+}
+.navbar-default .navbar-brand:hover,
+.navbar-dafault .navbar-brand:focus { /*제목에 마우스 올렸을 떄*/
+	color: #dddddd;
+	background-color:transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus { /*선택된 네비 마우스 색상*/
+	color: #ffffff;
+	background-color: #1456b8;
+}
+.navbar-default .navbar-nav > li > a { /*네비 글자 기본 폰트 변경*/
+	color: white;
+	font-family: 'Jeju Gothic';
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus { /*네비 글자에 마우스 올렸을 때*/
+	color: #dddddd;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus { /*열린 드랍다운 마우스 색상*/
+	color: #006DCC;
+	text-decoration: none;
+	background-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { /*토글에 마우스 올렸을 때*/
+	background-color: #1456B8;
+}
+.navbar-default .navbar-toggle .icon-bar { /*토글 아이콘 바 색상*/
+	background-color: #dddddd;
+}
+@media (max-width: 767px) { /*작은 화면일 때 드랍다운 아이탬에 마우스 올렸을 때*/
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #ffffff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #eeeeee;
+	}
+}
+/* 네비바 길이 수정*/
+.navbar-fixed-top {
+	min-height: 70px;
+}
+.navbar-nav > li > a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 70px;
+}
+@media (max-width: 767px) {
+	.navbar-default .navbar-brand {
+		padding-top: 15px;
+	}
+	.navbar-nav > li > a {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		line-height: 40px;
+	}
+}
+/*파일업로드 디자인*/
+.btn-file {
+	position: relative;
+	overflow: hidden;
+}
+.btn-file input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	font-size: 100px;
+	text-align: right;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	outline: none;
+	background: white;
+	cursor: inherit;
+	display: block;
+}
+.file {
+	visibility: hidden;
+	position: absolute;
+}

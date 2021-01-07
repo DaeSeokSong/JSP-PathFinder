@@ -1,0 +1,17 @@
+<Context path="/FUC" docBase="www">
+	<Resource
+		name="jdbc/FUC"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		loginTimeout="10"
+		validationQuery="SELECT 1 FROM DUAL"
+		maxWait="5000"
+		username="ejsvk2024"
+		password="tlsthdrh21123"
+		testOnBorrow="true"
+		url="jdbc:mysql://osias.asuscomm.com:3307/FUC?serverTimezone=UTC"/>
+	<ResourceLink type="javax.sql.data.DataSource"
+		name="jdbc/FUC"
+		global="jdbc/FUC"/>
+</Context>
